@@ -7,5 +7,11 @@ namespace TiendaAPI.Repositories.ProductoRepository
         Task<List<Producto>> ConsultarTodos();
 
         Task<Producto> InsertarProducto(Producto producto);
+
+        Task<Producto> ActualizarProducto(Producto producto);
+
+        Task<Producto> ConsultarPorId(int id);
+
+
     }
 }

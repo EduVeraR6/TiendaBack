@@ -40,6 +40,29 @@ namespace TiendaAPI.Controllers
             return Ok(producto);
         }
 
+        [HttpGet("{id}")]
+
+        public async Task<IActionResult> ConsultarPorId([FromRoute] int id)
+        {
+            var producto = await _service.ConsultarPorId(id);
+
+            return Ok(producto);
+        }
+
+
+        [HttpPut]
+        public async Task<IActionResult> ActualizarProducto([FromBody] Producto producto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            await _service.UpdateProducto(producto);
+
+
+            return Ok(producto);
+        }
 
 
     }
