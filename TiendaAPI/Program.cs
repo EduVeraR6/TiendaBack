@@ -19,7 +19,15 @@ builder.Services.AddScoped<IProducto , ProductoRepository>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
 
 
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy",
+    builder => builder
+    .WithOrigins("http://localhost:4200") 
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .AllowCredentials());
+});
 
 
 var app = builder.Build();
@@ -32,6 +40,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 

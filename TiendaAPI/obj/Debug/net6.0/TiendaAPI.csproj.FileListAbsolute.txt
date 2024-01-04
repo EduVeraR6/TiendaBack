@@ -129,3 +129,4 @@ D:\Practicas Angular\Practica Angular\TiendaBack\TiendaAPI\obj\Debug\net6.0\refi
 D:\Practicas Angular\Practica Angular\TiendaBack\TiendaAPI\obj\Debug\net6.0\TiendaAPI.pdb
 D:\Practicas Angular\Practica Angular\TiendaBack\TiendaAPI\obj\Debug\net6.0\TiendaAPI.genruntimeconfig.cache
 D:\Practicas Angular\Practica Angular\TiendaBack\TiendaAPI\obj\Debug\net6.0\ref\TiendaAPI.dll
+C:\Users\vedison\source\repos\TiendaAPI\TiendaAPI\obj\Debug\net6.0\TiendaAPI.sourcelink.json
